@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SingleCell/质控/scDblFinder.md",
+                "file": "NPC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "scDblFinder"
+              "title": "NPC"
             }
           }
         ]
@@ -166,8 +166,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9a31fdb75c65239",
+  "active": "59b79c21c0cdd1ba",
   "lastOpenFiles": [
+    "SingleCell/质控/scDblFinder.md",
     "Untitled.canvas",
     "RNA/lncRNA/lncRNA测序报告.md",
     "NPCDB/NPC marker.md",
@@ -190,7 +191,6 @@
     "NPCDB/NPCDB.md",
     "NPCDB",
     "RNA/miRNA/miRDeep2分析流程.md",
-    "SingleCell/质控/scDblFinder.md",
     "RNA/真核有参转录组测序报告.md",
     "RNA/真核无参转录组测序报告.md",
     "RNA/lncRNA/汇总.md",
