@@ -23,7 +23,16 @@
 | **BaP** | 2336 |     |     |     | Benzo[a]pyrene          |
 |         | 5889 |     |     |     | Dibenz [a,h] anthracene |
 
-## 槟榔碱Arecoline
+## 槟榔碱Arecoline 的NPC网络毒理学分析
 
-1. 差异基因
-2. 
+1. NPCvsHC差异基因
+2. wgcna分析与NPC相关的hub基因
+3. 疾病靶点 ∩ 化合物靶点 ∩ 差异基因 ∩ WGCNA hub基因
+4. PPI进一步筛选基因
+5. 分子对接得到<-7或-5的蛋白 分子模拟
+6. PFI预后 < 0.05
+7. cox模型 模型相关列线图 诊断图 clinical impact图 单因素多因素cox回归
+8. 基因与免疫细胞相关性，高低风险组 免疫浸润差异
+9. 基因在单细胞水平表达差异
+10. 基因组细胞分化 细胞通讯关系
+11. 
