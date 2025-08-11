@@ -23,4 +23,7 @@
 | **BaP** | 2336 |     |     |     | Benzo[a]pyrene          |
 |         | 5889 |     |     |     | Dibenz [a,h] anthracene |
 
-## 槟榔碱
+## 槟榔碱Arecoline
+
+1. 差异基因
+2. 
