@@ -3,14 +3,13 @@ CibersortX网站是常用的工具，但是是网页上传数据，现在网页5
 BayesPrism是一个综合工具，旨在利用贝叶斯统计方法从bulk RNA测序数据中精确解析肿瘤微环境的细胞组成，并同时考虑细胞特异性的基因表达模式，通过先进的算法模块实现对复杂细胞混合物的深入分析和理解。
 
 BayesPrism包含细胞去卷积模块和嵌入学习模块。细胞去卷积模块依据来自单细胞RNA测序（scRNA-seq）的细胞类型特异性表达轮廓建立先验，联合估计肿瘤（或非肿瘤）样本的bulk RNA-seq表达数据中细胞类型组成及其特异性基因表达的后验分布。嵌入学习模块采用期望最大化算法，基于去卷积模块推测出的非恶性细胞表达量和比例条件，通过线性组合恶性基因程序来近似肿瘤表达模式。
-
-![](https://cdn.nlark.com/yuque/0/2024/png/975582/1721531020278-8edeace1-03d2-4f1c-bf08-ae993d9e4001.png "BayesPrism示意图，每个步骤在做什么")
+![BayesPrism示意图，每个步骤在做什么](https://s2.loli.net/2025/08/12/XOJlKcdRSqCPrka.png)
 
 ## 安装
 
 ```
-library(remotes)
-remotes::install_github("Danko-Lab/BayesPrism")
+BiocManager::install("Danko-Lab/BayesPrism/BayesPrism")
+BiocManager::install("ScienceAdvances/Canton")
 ```
 
 注：using是我写的函数，有需要可以后台联系，加入交流群；using作用是一次性加载多个R包，不用写双引号，并且不在屏幕上打印包的加载信息
@@ -18,7 +17,7 @@ remotes::install_github("Danko-Lab/BayesPrism")
 加载示例数据，可以后台联系获得数据代码和结果文件
 
 ```
-using(remotes, data.table, BayesPrism)
+Canton::using(remotes, data.table, BayesPrism)
 load('tutorial.gbm.rdata')
 ```
 
@@ -83,8 +82,7 @@ sc.stat <- BayesPrism::plot.scRNA.outlier(
     pdf.prefix="gbm.sc.stat"
 )
 ```
-
-![](https://cdn.nlark.com/yuque/0/2024/png/975582/1721533486813-357194a4-4214-4c0d-abd2-8e98220dcfe7.png)
+![image.png](https://s2.loli.net/2025/08/12/K9CuFR1JS4hgioc.png)
 
 核
 
@@ -99,7 +97,8 @@ bk.stat <- BayesPrism::plot.bulk.outlier(
 )
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/975582/1721533501125-7735ce2f-58c8-420f-a1f7-18bce233c032.png)
+![image.png](https://s2.loli.net/2025/08/12/z6GuVtJXRYnDb13.png)
+
 
 去除线粒体、核糖体基因、性染色体基因、低表达基因
 
@@ -122,8 +121,8 @@ BayesPrism::plot.bulk.vs.sc(
     pdf.prefix="gbm.bk.vs.sc"
 )
 ```
+![image.png](https://s2.loli.net/2025/08/12/caXTfZ413WwDu2I.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/975582/1721533563535-fab6365f-cf51-41ce-b71a-65946da8677d.png)
 
 只选择编码蛋白的基因
 
