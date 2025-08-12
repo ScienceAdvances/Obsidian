@@ -41,3 +41,9 @@ CID:  2230
 BRCA1 - 7JZV - 44
 KIF23 - 3VHX - 47
 KIF20 AF-O95235-F1-model_v4 -26
+
+- immune (CD45+,PTPRC),
+    
+- epithelial/cancer (EpCAM+,EPCAM),
+    
+- stromal (CD10+,MME,fibro or CD31+,PECAM1,endo)
