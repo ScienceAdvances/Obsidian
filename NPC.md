@@ -24,6 +24,7 @@
 |         | 5889 |     |     |     | Dibenz [a,h] anthracene |
 
 ## 槟榔碱Arecoline 的NPC网络毒理学分析
+CID:  2230
 
 1. NPCvsHC差异基因 富集分析
 2. wgcna分析与NPC相关的hub基因 富集分析
