@@ -34,6 +34,9 @@ sudo apt full-upgrade -y
 sudo apt install -y build-essential cmake curl wget
 sudo apt install -y libfontconfig1-dev libharfbuzz-dev libfribidi-dev libcurl4-openssl-dev libhdf5-dev libgdal-dev 
 
+sudo apt install -y libcairo2-dev jags libjags-dev
+```
+
 ```
 ## 安装R语言
 ```shell
