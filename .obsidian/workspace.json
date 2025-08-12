@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/WSL2安装Debian13.md",
+                "file": "Nasopharyngeal Carcinoma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WSL2安装Debian13"
+              "title": "Nasopharyngeal Carcinoma"
             }
           }
         ]
@@ -168,8 +168,8 @@
   },
   "active": "59b79c21c0cdd1ba",
   "lastOpenFiles": [
-    "NPC.md",
     "Linux/WSL2安装Debian13.md",
+    "Nasopharyngeal Carcinoma.md",
     "SingleCell/质控/scDblFinder.md",
     "Untitled.canvas",
     "RNA/lncRNA/lncRNA测序报告.md",
