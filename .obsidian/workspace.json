@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NPC.md",
+                "file": "Linux/WSL2安装Debian13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NPC"
+              "title": "WSL2安装Debian13"
             }
           }
         ]
@@ -168,6 +168,7 @@
   },
   "active": "59b79c21c0cdd1ba",
   "lastOpenFiles": [
+    "NPC.md",
     "SingleCell/质控/scDblFinder.md",
     "Untitled.canvas",
     "RNA/lncRNA/lncRNA测序报告.md",
@@ -176,7 +177,6 @@
     "SingleCell/细胞类型注释.md",
     "vina.md",
     "Linux/WSL2安装Debian13.md",
-    "NPC.md",
     "Gromacs/Gromacs结果解释.md",
     "Gromacs/Gromacs环境配置.md",
     "Linux",

@@ -26,14 +26,12 @@ deb http://ftp.debian.org/debian trixie-backports main
 ```shell
 sudo apt update && sudo apt upgrade -y
 sudo apt full-upgrade -y
-
-sudo apt install -y build-essential curl wget libcurl4-openssl-dev libhdf5-dev libgdal-dev
 ```
 
 安装系统软件
 
 ```shell
-sudo apt install -y build-essential curl wget libcurl4-openssl-dev libhdf5-dev libgdal-dev
+sudo apt install -y build-essential curl wget libcurl4-openssl-dev libhdf5-dev libgdal-dev 
 ```
 ## 安装R语言
 ```shell
