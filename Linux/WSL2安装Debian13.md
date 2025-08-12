@@ -31,7 +31,7 @@ sudo apt full-upgrade -y
 安装系统软件
 
 ```shell
-sudo apt install -y build-essential curl wget libcurl4-openssl-dev libhdf5-dev libgdal-dev 
+sudo apt install -y libfontconfig1-dev build-essential cmake curl wget libcurl4-openssl-dev libhdf5-dev libgdal-dev 
 ```
 ## 安装R语言
 ```shell
