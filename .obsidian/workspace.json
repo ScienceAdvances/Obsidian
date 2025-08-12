@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SDF（Structure Data File）.md",
+                "file": "Gromacs/Gromacs环境配置.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SDF（Structure Data File）"
+              "title": "Gromacs环境配置"
             }
           }
         ],
@@ -197,8 +197,10 @@
   },
   "active": "3484fc2620eb3f08",
   "lastOpenFiles": [
+    "Gromacs/SDF（Structure Data File）.md",
+    "Gromacs/Gromacs结果解释.md",
+    "Gromacs/Gromacs环境配置.md",
     "Nasopharyngeal Carcinoma.md",
-    "SDF（Structure Data File）.md",
     "SingleCell/CibersortX的替代者BayesPrism用单细胞数据去卷积得到普通转录组细胞类型比例.md",
     "Linux/WSL2安装Debian13.md",
     "SingleCell/质控/scDblFinder.md",
@@ -208,8 +210,6 @@
     "文献阅读/prompt.md",
     "SingleCell/细胞类型注释.md",
     "vina.md",
-    "Gromacs/Gromacs结果解释.md",
-    "Gromacs/Gromacs环境配置.md",
     "Linux",
     "Gromacs",
     "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
