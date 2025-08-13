@@ -1,0 +1,1 @@
+https://www.wwpdb.org/documentation/file-format-content/format33/sect9.html#ATOM
