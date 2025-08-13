@@ -1,10 +1,15 @@
 分子对接是药物发现和蛋白研究中的核心步骤，但传统流程中，从分子下载、软件配置到结果分析，往往需要繁琐的操作和大量参数调试，让新手望而却步。
 
 今天就给大家分享一套极简方案——**用3行核心代码搞定基于AutoDock Vina的分子对接**，甚至还能借助Gnina的CNN评分提升精度！无需手动点击，全程命令行操作，小白也能快速上手。
-⚠️upload failed, check dev console
-⚠️upload failed, check dev console
+
+![image.png](https://s2.loli.net/2025/08/13/XDEFIjePYRwz3MW.png)
 
 ## 为什么选择Gnina？
+
+**Gnina** 是基于AutoDock Vina开发的分子对接工具，它保留了Vina的轻量、快速特性，还加入了**卷积神经网络（CNN）评分函数**，能更精准地预测蛋白-配体结合亲和力，尤其适合虚拟筛选和结合模式预测。
+
+我做过简单的测试，用共结晶的配体和蛋白使用AutoDock Vina做分子对接和Gnina的全蛋白对接结果差不多，所以省去了找box步骤便可以批量做分子对接，从而达到虚拟筛选的作用
+ 
 - 安装代码：https://github.com/gnina/gnina
 - 视频教程：https://www.youtube.com/watch?v=MG3Srzi5kZ0
 - Slides PPT: https://bits.csb.pitt.edu/rsc_workshop2021/docking_with_gnina.slides.html#/
@@ -13,10 +18,6 @@
 
 在介绍代码前，先简单说下工具：
 
-**Gnina** 是基于AutoDock Vina开发的分子对接工具，它保留了Vina的轻量、快速特性，还加入了**卷积神经网络（CNN）评分函数**，能更精准地预测蛋白-配体结合亲和力，尤其适合虚拟筛选和结合模式预测。
-
-我做过简单的测试，用共结晶的配体和蛋白使用AutoDock Vina做分子对接和Gnina的全蛋白对接结果差不多，所以省去了找box步骤便可以批量做分子对接，从而达到虚拟筛选的作用
- 
 下面直接上干货！整套流程包含**配体/蛋白下载、分子对接、结果汇总**，核心代码仅3行，全程自动化。
 ## 准备工作
 创建输出文件
@@ -47,7 +48,7 @@ protein2 2DEF
 从PubChem数据库批量下载配体的SDF文件，存到`Ligands`文件夹：
 
 ```bash
-cut -f2 Ligand.list | xargs -P5 -I {} -n1 python src/get_pubchem.py --cid {} --output Ligands/{}.sdf
+cut -f2 Ligand.list | xargs -P5 -I {} -n1 python get_pubchem.py --cid {} --output Ligands/{}.sdf
 ```
 
 - **解析**：
@@ -55,19 +56,19 @@ cut -f2 Ligand.list | xargs -P5 -I {} -n1 python src/get_pubchem.py --cid {} --o
 - `xargs -P5：用5个进程并行下载，加速获取；
 - `get_pubchem.py`：辅助脚本（功能是调用PubChem API下载SDF格式配体）。
 
-### 第2行：批量下载蛋白（RCSB PDB）
+## 第2行：批量下载蛋白（RCSB PDB）
 
 从RCSB PDB数据库下载蛋白的PDB文件，存到`Receptors`文件夹：
 
 ```bash
-cut -f2 Receptor.list | xargs -P5 -I {} -n1 python src/get_pdb.py -i {} -o Receptors
+cut -f2 Receptor.list | xargs -P5 -I {} -n1 python get_pdb.py -i {} -o Receptors
 ```
 
 - **解析**：
 - 类似配体下载逻辑，提取PDB ID后并行下载蛋白结构；
 - `get_pdb.py`：辅助脚本（调用pdbfixerAPI下载PDB文件）。
 -
-### 第3行：批量运行分子对接（Gnina）
+## 第3行：批量运行分子对接（Gnina）
 
 这是核心步骤！用Gnina批量处理所有蛋白-配体组合，自动完成对接并输出结果：
 
@@ -100,7 +101,7 @@ gnina \
 
 对接完成后，用一行代码汇总所有结果（结合能、排名等），输出CSV表格：
 ```bash
-python3 src/get_score.py --dockdir DockResult --ligand Ligand.list --receptor Receptor.list --output DockSummary.csv
+python3 get_score.py --dockdir DockResult --ligand Ligand.list --receptor Receptor.list --output DockSummary.csv
 ```
 
 打开`DockSummary.csv`，就能直观看到每个蛋白-配体组合的对接分数，轻松筛选最优候选！
