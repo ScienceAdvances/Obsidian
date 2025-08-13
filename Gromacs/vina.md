@@ -26,10 +26,9 @@ cut -f2 Ligand.list | xargs -P3 -I {} -n1 python src/get_pubchem.py --cid {} --o
 cut -f2 Receptor.list | xargs -P2 -I {} -n1 python src/get_pdb.py -i {} -o Receptors
 ```
 
-## run gnina
+## Run Gnina
 ```shell
 cat Receptor.Ligand | xargs -n2 -P1 bash -c '
-
 gnina \
 --receptor "Receptors/$1.pdb" \
 --ligand "Ligands/$2.sdf" \
@@ -42,6 +41,9 @@ gnina \
 --exhaustiveness 256 \
 --num_modes 50 \
 --device 0 &> "logs/$1--$2.log"
-
 ' bash
+```
+## Docking Summary
+```shell
+python3 src/get_score.py --dockdir DockResult --ligand Ligand.list --recptor Receptor.list --output DockSummary.csv
 ```
