@@ -1,6 +1,8 @@
 分子对接是药物发现和蛋白研究中的核心步骤，但传统流程中，从分子下载、软件配置到结果分析，往往需要繁琐的操作和大量参数调试，让新手望而却步。
 
 今天就给大家分享一套极简方案——**用3行核心代码搞定基于AutoDock Vina的分子对接**，甚至还能借助Gnina的CNN评分提升精度！无需手动点击，全程命令行操作，小白也能快速上手。
+⚠️upload failed, check dev console
+⚠️upload failed, check dev console
 
 ## 为什么选择Gnina？
 - 安装代码：https://github.com/gnina/gnina
@@ -45,12 +47,12 @@ protein2 2DEF
 从PubChem数据库批量下载配体的SDF文件，存到`Ligands`文件夹：
 
 ```bash
-cut -f2 Ligand.list | xargs -P3 -I {} -n1 python src/get_pubchem.py --cid {} --output Ligands/{}.sdf
+cut -f2 Ligand.list | xargs -P5 -I {} -n1 python src/get_pubchem.py --cid {} --output Ligands/{}.sdf
 ```
 
 - **解析**：
 - `cut -f2 Ligand.list`：提取列表中第二列的PubChem CID（配体唯一标识）；
-- `xargs -P3`：用3个进程并行下载，加速获取；
+- `xargs -P5：用5个进程并行下载，加速获取；
 - `get_pubchem.py`：辅助脚本（功能是调用PubChem API下载SDF格式配体）。
 
 ### 第2行：批量下载蛋白（RCSB PDB）
@@ -58,7 +60,7 @@ cut -f2 Ligand.list | xargs -P3 -I {} -n1 python src/get_pubchem.py --cid {} --o
 从RCSB PDB数据库下载蛋白的PDB文件，存到`Receptors`文件夹：
 
 ```bash
-cut -f2 Receptor.list | xargs -P2 -I {} -n1 python src/get_pdb.py -i {} -o Receptors
+cut -f2 Receptor.list | xargs -P5 -I {} -n1 python src/get_pdb.py -i {} -o Receptors
 ```
 
 - **解析**：
@@ -70,7 +72,7 @@ cut -f2 Receptor.list | xargs -P2 -I {} -n1 python src/get_pdb.py -i {} -o Recep
 这是核心步骤！用Gnina批量处理所有蛋白-配体组合，自动完成对接并输出结果：
 
 ```bash
-cat Receptor.Ligand | xargs -n2 -P bash -c '
+cat Receptor.Ligand | xargs -n2 -P5 bash -c '
 gnina \
 --receptor "Receptors/$1.pdb" \
 --ligand "Ligands/$2.sdf" \

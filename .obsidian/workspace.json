@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "自媒体/三行代码搞定AutoDock Vina分子对接.md",
+                "file": "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三行代码搞定AutoDock Vina分子对接"
+              "title": "三行代码搞定AutoDock Vina批量分子对接"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "自媒体/三行代码搞定AutoDock Vina分子对接.md",
+                "file": "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 三行代码搞定AutoDock Vina分子对接"
+              "title": "Backlinks for 三行代码搞定AutoDock Vina批量分子对接"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "自媒体/三行代码搞定AutoDock Vina分子对接.md",
+                "file": "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 三行代码搞定AutoDock Vina分子对接"
+              "title": "Outgoing links from 三行代码搞定AutoDock Vina批量分子对接"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "自媒体/三行代码搞定AutoDock Vina分子对接.md",
+                "file": "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 三行代码搞定AutoDock Vina分子对接"
+              "title": "Outline of 三行代码搞定AutoDock Vina批量分子对接"
             }
           }
         ]
@@ -173,7 +173,7 @@
   "lastOpenFiles": [
     "自媒体",
     "Untitled.md",
-    "自媒体/三行代码搞定AutoDock Vina分子对接.md",
+    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
     "Gromacs/vina.md",
     "conflict-files-obsidian-git.md"
   ]
