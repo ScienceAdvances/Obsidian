@@ -3,21 +3,19 @@
 今天就给大家分享一套极简方案——**用3行核心代码搞定基于AutoDock Vina的分子对接**，甚至还能借助Gnina的CNN评分提升精度！无需手动点击，全程命令行操作，小白也能快速上手。
 
 ## 为什么选择Gnina？
-安装代码：https://github.com/gnina/gnina
-视频教程：https://www.youtube.com/watch?v=MG3Srzi5kZ0
-Slides PPT: https://bits.csb.pitt.edu/rsc_workshop2021/docking_with_gnina.slides.html#/
-示例代码：https://colab.research.google.com/drive/1QYo5QLUE80N_G28PlpYs6OKGddhhd931
-示例代码：https://colab.research.google.com/drive/1GXmk1v8C-c4UtyKFqIm9HnsrVYH0pI-c
+- 安装代码：https://github.com/gnina/gnina
+- 视频教程：https://www.youtube.com/watch?v=MG3Srzi5kZ0
+- Slides PPT: https://bits.csb.pitt.edu/rsc_workshop2021/docking_with_gnina.slides.html#/
+- 示例代码：https://colab.research.google.com/drive/1QYo5QLUE80N_G28PlpYs6OKGddhhd931
+- 示例代码：https://colab.research.google.com/drive/1GXmk1v8C-c4UtyKFqIm9HnsrVYH0pI-c
+
 在介绍代码前，先简单说下工具：
 
 **Gnina** 是基于AutoDock Vina开发的分子对接工具，它保留了Vina的轻量、快速特性，还加入了**卷积神经网络（CNN）评分函数**，能更精准地预测蛋白-配体结合亲和力，尤其适合虚拟筛选和结合模式预测。
 
 我做过简单的测试，用共结晶的配体和蛋白使用AutoDock Vina做分子对接和Gnina的全蛋白对接结果差不多，所以省去了找box步骤便可以批量做分子对接，从而达到虚拟筛选的作用
  
-
 下面直接上干货！整套流程包含**配体/蛋白下载、分子对接、结果汇总**，核心代码仅3行，全程自动化。
-
-  
 ## 准备工作
 创建输出文件
 ```shell
@@ -72,7 +70,7 @@ cut -f2 Receptor.list | xargs -P2 -I {} -n1 python src/get_pdb.py -i {} -o Recep
 这是核心步骤！用Gnina批量处理所有蛋白-配体组合，自动完成对接并输出结果：
 
 ```bash
-cat Receptor.Ligand | xargs -n2 -P1 bash -c '
+cat Receptor.Ligand | xargs -n2 -P bash -c '
 gnina \
 --receptor "Receptors/$1.pdb" \
 --ligand "Ligands/$2.sdf" \
@@ -99,33 +97,16 @@ gnina \
 ## 一步生成对接总结报告
 
 对接完成后，用一行代码汇总所有结果（结合能、排名等），输出CSV表格：
-
 ```bash
-
 python3 src/get_score.py --dockdir DockResult --ligand Ligand.list --receptor Receptor.list --output DockSummary.csv
-
 ```
 
 打开`DockSummary.csv`，就能直观看到每个蛋白-配体组合的对接分数，轻松筛选最优候选！
 
-  
-  
+## 个性化设置
 
-## 新手小贴士
+1. **盒子调整**：若`--autobox_ligand`生成的盒子不合适，可手动用`--center_x` `--center_y` `--center_z`和`--size_x` `--size_y` `--size_z`指定；
+2. **共结晶**：可以利用该共结晶配体(lig.pdb)，帮助gnina设定box的位置 `--autobox_ligand lig.pdb` 
+3. **可视化**：用PyMOL或ChimeraX打开`DockResult`中的SDF文件，可直观查看对接构象。
+4. **热图**：可以根据`DockSummary.csv`文件绘制top对接结果的热力值图
 
-1. **并行参数**：`xargs -P`后的数字（如`-P3`）代表并行进程数，根据电脑CPU核心数调整（别超过核心数，避免卡顿）；
-
-2. **AutoDock Vina兼容**：若想用原生Vina，只需把`gnina`换成`vina`，参数基本通用；
-
-3. **盒子调整**：若`--autobox_ligand`生成的盒子不合适，可手动用`--center_x` `--center_y` `--center_z`和`--size_x` `--size_y` `--size_z`指定；
-
-4. **可视化**：用PyMOL或ChimeraX打开`DockResult`中的SDF文件，可直观查看对接构象。
-
-  
-  
-
-用这三行代码，从分子下载到结果分析全流程自动化，再也不用对着复杂界面点点点！无论是新手练手还是批量虚拟筛选，都能高效搞定。
-
-  
-
-赶紧收藏起来试试吧，有任何问题欢迎在评论区交流～
