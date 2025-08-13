@@ -2,9 +2,6 @@
 
 今天就给大家分享一套极简方案——**用3行核心代码搞定基于AutoDock Vina的分子对接**，甚至还能借助Gnina的CNN评分提升精度！无需手动点击，全程命令行操作，小白也能快速上手。
 
-  
-  
-
 ## 为什么选择Gnina？
 安装代码：https://github.com/gnina/gnina
 视频教程：https://www.youtube.com/watch?v=MG3Srzi5kZ0
@@ -15,59 +12,38 @@ Slides PPT: https://bits.csb.pitt.edu/rsc_workshop2021/docking_with_gnina.slides
 
 **Gnina** 是基于AutoDock Vina开发的分子对接工具，它保留了Vina的轻量、快速特性，还加入了**卷积神经网络（CNN）评分函数**，能更精准地预测蛋白-配体结合亲和力，尤其适合虚拟筛选和结合模式预测。
 
-  
-
-用它对接，既享受Vina的便捷，又能获得更可靠的结果，简直是新手福音！
-
-  
-  
-
-## 三行代码，从0到1完成对接
+我做过简单的测试，用共结晶的配体和蛋白使用AutoDock Vina做分子对接和Gnina的全蛋白对接结果差不多，所以省去了找box步骤便可以批量做分子对接，从而达到虚拟筛选的作用
+ 
 
 下面直接上干货！整套流程包含**配体/蛋白下载、分子对接、结果汇总**，核心代码仅3行，全程自动化。
 
   
-  
-
-### 准备工作
+## 准备工作
 
 在运行前，需要准备两个文件（格式示例如下）：
 
 - `Ligand.list`：配体ID列表（第一列名称，第二列PubChem的CID）
 
-```
-
+```shell
 ligand1 12345
-
 ligand2 67890
-
 ```
 
 - `Receptor.list`：蛋白ID列表（第一列名称，第二列RCSB的PDB ID）
 
-```
-
+```shell
 protein1 1ABC
-
 protein2 2DEF
-
 ```
 
-  
+同时，确保安装了必要工具：`gnina`、`python`、`pdbfix`、`xargs`（Linux/macOS自带，Windows可通过WSL或Cygwin使用）。
 
-同时，确保安装了必要工具：`gnina`、`python`、`xargs`（Linux/macOS自带，Windows可通过WSL或Cygwin使用）。
-
-  
-  
-
-### 第1行：批量下载配体（PubChem）
+## 第1行：批量下载配体（PubChem）
 
 从PubChem数据库批量下载配体的SDF文件，存到`Ligands`文件夹：
 
 ```bash
-
 cut -f2 Ligand.list | xargs -P3 -I {} -n1 python src/get_pubchem.py --cid {} --output Ligands/{}.sdf
-
 ```
 
 - **解析**：
