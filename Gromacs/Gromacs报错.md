@@ -7,4 +7,4 @@ wget http://mackerell.umaryland.edu/download.php?filename=CHARMM_ff_params_files
 ERROR 1 [file topol_Protein_chain_A.itp, line 37637]:                                                                                                                                     
   No default Per. Imp. Dih. types for interaction                                                                                                                                         
   '2134  2137  2143  2138     4'.                                                                                                                                                         
-                                     
+http://bbs.keinsci.com/thread-25936-1-1.html 
