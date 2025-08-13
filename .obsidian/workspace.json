@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
+                "file": "Gromacs/Gromacs环境配置.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三行代码搞定AutoDock Vina批量分子对接"
+              "title": "Gromacs环境配置"
             }
           }
         ]
@@ -171,10 +171,13 @@
   },
   "active": "879c8defed7936ac",
   "lastOpenFiles": [
+    "Gromacs/Gromacs结果解释.md",
+    "Gromacs/SDF（Structure Data File）.md",
+    "Gromacs/vina.md",
+    "Gromacs/Gromacs环境配置.md",
+    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
     "自媒体",
     "Untitled.md",
-    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
-    "Gromacs/vina.md",
     "conflict-files-obsidian-git.md"
   ]
 }
