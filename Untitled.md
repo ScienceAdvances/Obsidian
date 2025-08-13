@@ -11,7 +11,11 @@
   
 
 ## 为什么选择Gnina？
-https://github.com/gnina/gnina
+安装代码：https://github.com/gnina/gnina
+视频教程：https://www.youtube.com/watch?v=MG3Srzi5kZ0
+Slides PPT: https://bits.csb.pitt.edu/rsc_workshop2021/docking_with_gnina.slides.html#/
+示例代码：https://colab.research.google.com/drive/1QYo5QLUE80N_G28PlpYs6OKGddhhd931
+示例代码：https://colab.research.google.com/drive/1GXmk1v8C-c4UtyKFqIm9HnsrVYH0pI-c
 在介绍代码前，先简单说下工具：
 
 **Gnina** 是基于AutoDock Vina开发的分子对接工具，它保留了Vina的轻量、快速特性，还加入了**卷积神经网络（CNN）评分函数**，能更精准地预测蛋白-配体结合亲和力，尤其适合虚拟筛选和结合模式预测。
