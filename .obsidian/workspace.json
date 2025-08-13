@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gromacs/Gromacs报错.md",
+                "file": "Gromacs/Gromacs环境配置.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gromacs报错"
+              "title": "Gromacs环境配置"
             }
           }
         ],
@@ -200,8 +200,8 @@
   },
   "active": "95e60891b1bb754a",
   "lastOpenFiles": [
-    "Gromacs/Gromacs环境配置.md",
     "Gromacs/Gromacs报错.md",
+    "Gromacs/Gromacs环境配置.md",
     "Gromacs/Gromacs结果解释.md",
     "pdb format.md",
     "Gromacs/SDF（Structure Data File）.md",
