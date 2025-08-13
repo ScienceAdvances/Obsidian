@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nasopharyngeal Carcinoma.md",
+                "file": "Gromacs/Gromacs结果解释.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nasopharyngeal Carcinoma"
+              "title": "Gromacs结果解释"
             }
           }
         ],
@@ -191,15 +191,17 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "3484fc2620eb3f08",
   "lastOpenFiles": [
+    "Gromacs/vina.md",
+    "Nasopharyngeal Carcinoma.md",
     "Gromacs/Gromacs环境配置.md",
     "Gromacs/SDF（Structure Data File）.md",
     "Gromacs/Gromacs结果解释.md",
-    "Nasopharyngeal Carcinoma.md",
     "SingleCell/CibersortX的替代者BayesPrism用单细胞数据去卷积得到普通转录组细胞类型比例.md",
     "Linux/WSL2安装Debian13.md",
     "SingleCell/质控/scDblFinder.md",
@@ -208,7 +210,6 @@
     "NPCDB/NPC marker.md",
     "文献阅读/prompt.md",
     "SingleCell/细胞类型注释.md",
-    "vina.md",
     "Linux",
     "Gromacs",
     "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
