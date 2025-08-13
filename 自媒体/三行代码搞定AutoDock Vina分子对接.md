@@ -19,6 +19,10 @@ Slides PPT: https://bits.csb.pitt.edu/rsc_workshop2021/docking_with_gnina.slides
 
   
 ## 准备工作
+创建输出文件
+```shell
+mkdir -p Ligands Receptors DockResult logs
+```
 
 在运行前，需要准备两个文件（格式示例如下）：
 
@@ -36,7 +40,7 @@ protein1 1ABC
 protein2 2DEF
 ```
 
-同时，确保安装了必要工具：`gnina`、`python`、`pdbfix`、`xargs`（Linux/macOS自带，Windows可通过WSL或Cygwin使用）。
+同时，确保安装了必要工具：`gnina`、`python`、`pdbfixer`、`xargs`（Linux/macOS自带，Windows可通过WSL或Cygwin使用）。
 
 ## 第1行：批量下载配体（PubChem）
 
@@ -47,85 +51,50 @@ cut -f2 Ligand.list | xargs -P3 -I {} -n1 python src/get_pubchem.py --cid {} --o
 ```
 
 - **解析**：
-
 - `cut -f2 Ligand.list`：提取列表中第二列的PubChem CID（配体唯一标识）；
-
 - `xargs -P3`：用3个进程并行下载，加速获取；
-
-- `get_pubchem.py`：辅助脚本（可自行编写，功能是调用PubChem API下载SDF格式配体）。
-
-  
-  
+- `get_pubchem.py`：辅助脚本（功能是调用PubChem API下载SDF格式配体）。
 
 ### 第2行：批量下载蛋白（RCSB PDB）
 
 从RCSB PDB数据库下载蛋白的PDB文件，存到`Receptors`文件夹：
 
 ```bash
-
 cut -f2 Receptor.list | xargs -P2 -I {} -n1 python src/get_pdb.py -i {} -o Receptors
-
 ```
 
 - **解析**：
-
 - 类似配体下载逻辑，提取PDB ID后并行下载蛋白结构；
-
-- `get_pdb.py`：辅助脚本（调用RCSB API下载PDB文件）。
-
-  
-  
-
+- `get_pdb.py`：辅助脚本（调用pdbfixerAPI下载PDB文件）。
+-
 ### 第3行：批量运行分子对接（Gnina）
 
 这是核心步骤！用Gnina批量处理所有蛋白-配体组合，自动完成对接并输出结果：
 
 ```bash
-
 cat Receptor.Ligand | xargs -n2 -P1 bash -c '
-
 gnina \
-
 --receptor "Receptors/$1.pdb" \
-
 --ligand "Ligands/$2.sdf" \
-
 --autobox_ligand "Receptors/$1.pdb" \
-
 --out DockResult/"$1--$2.sdf" \
-
 --cpu 32 \
-
 --scoring vina \
-
 --seed 1 \
-
 --cnn_verbose \
-
 --exhaustiveness 256 \
-
 --num_modes 50 \
-
 --device 0 &> "logs/$1--$2.log"
-
 ' bash
-
 ```
 
 - **关键参数解析**：
 
 - `--receptor`/`--ligand`：指定蛋白和配体文件；
-
 - `--autobox_ligand`：根据蛋白自动生成对接盒子（无需手动设置中心和大小，新手友好！）；
-
-- `--scoring vina`：使用Vina经典评分函数（也可加`--cnn`启用CNN评分）；
-
+- `--scoring vina`：使用Vina经典评分函数；
 - `--exhaustiveness 256`：搜索强度（值越大结果越可靠，耗时略增）；
-
 - `--device 0`：若有GPU，指定显卡加速（无GPU可省略，自动用CPU）。
-
-  
-  
 
 ## 一步生成对接总结报告
 
