@@ -4,67 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "57ebe8cef453bb79",
+        "id": "8e3887ef8422be6c",
         "type": "tabs",
         "children": [
           {
-            "id": "59b79c21c0cdd1ba",
+            "id": "77074e02369126ce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nasopharyngeal Carcinoma.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Nasopharyngeal Carcinoma"
-            }
-          },
-          {
-            "id": "cc2e47fcf0c80daa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nasopharyngeal Carcinoma.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Nasopharyngeal Carcinoma"
-            }
-          },
-          {
-            "id": "3484fc2620eb3f08",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gromacs/vina.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "vina"
-            }
-          },
-          {
-            "id": "160134dcba39ddec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gromacs/Gromacs报错.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Gromacs报错"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,15 +162,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "160134dcba39ddec",
+  "active": "77074e02369126ce",
   "lastOpenFiles": [
-    "Nasopharyngeal Carcinoma.md",
-    "pdb format.md",
     "Untitled.md",
+    "Nasopharyngeal Carcinoma.md",
+    "Gromacs/vina.md",
+    "Gromacs/Gromacs报错.md",
+    "pdb format.md",
     "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
     "自媒体",
-    "Gromacs/Gromacs报错.md",
-    "Gromacs/vina.md",
     "Gromacs/Gromacs结果解释.md",
     "Gromacs/Gromacs环境配置.md",
     "Gromacs/SDF（Structure Data File）.md",
