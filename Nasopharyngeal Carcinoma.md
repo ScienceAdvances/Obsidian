@@ -9,7 +9,6 @@
 |           |         |     |     |                  |                                                              |                                                |
 - ****
 
-        
 - **（可选）烟草相关 N-nitrosamines（例如 NNK / NNN）**
     
     - 证据说明：这些 nitrosamine （NNK、NNN）主要来源于烟草/烟雾暴露；若你想同时研究“吸烟/烟草暴露”对 NPC 的贡献，可以把它们并入候选清单（但与咸鱼/食品来源不同属一类暴露）。有关咸鱼—NPC 方向的主证据集中在第 1–4 项。 [Translational Cancer Research](https://tcr.amegroups.org/article/view/63432/html?utm_source=chatgpt.com)
@@ -38,7 +37,7 @@ CID:  2230
 10. 基因组细胞分化 细胞通讯关系
 11. 展示基因的拷贝数变化 突变情况
 
-BRCA1 - 7JZV - 44
+BRCA1 - 7JZV - 19
 KIF23 - 3VHX - 47
 KIF20 AF-O95235-F1-model_v4 -26
 
