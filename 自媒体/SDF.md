@@ -92,129 +92,69 @@ M END
 
 ### **2. 构象相关属性**
 - RMSD
-
+标签`PUBCHEM_CONFORMER_RMSD`：表示分子构象的均方根偏差（单位通常为埃），0.6说明该构象与参考构象的偏差较小，结构稳定。
 ```C
 > <PUBCHEM_CONFORMER_RMSD>
 0.6
 ```
 
-- 标签`PUBCHEM_CONFORMER_RMSD`：表示分子构象的均方根偏差（单位通常为埃），0.6说明该构象与参考构象的偏差较小，结构稳定。
+- DIVERSEORDER
+标签`PUBCHEM_CONFORMER_DIVERSEORDER`：记录分子不同构象的多样性排序，用于构象筛选（如药物设计中优先选择多样性高的构象）
 
-  
-
-```
-
+```C
 > <PUBCHEM_CONFORMER_DIVERSEORDER>
-
 1
-
 11
-
 10
-
 ...（省略部分内容）
 
 ```
 
-- 标签`PUBCHEM_CONFORMER_DIVERSEORDER`：记录分子不同构象的多样性排序，用于构象筛选（如药物设计中优先选择多样性高的构象）。
+### **3. 电荷与能量属性**
+标签`PUBCHEM_MMFF94_PARTIAL_CHARGES`：表示用MMFF94力场计算的原子部分电荷（如第1个原子带-0.23电荷），用于分析分子极性和反应性
 
-  
-  
-
-#### **3. 电荷与能量属性**
-
-```
-
+```C
 > <PUBCHEM_MMFF94_PARTIAL_CHARGES>
-
 18
-
 1 -0.23
-
 10 -0.15
-
 ...（省略部分内容）
 
 ```
 
-- 标签`PUBCHEM_MMFF94_PARTIAL_CHARGES`：表示用MMFF94力场计算的原子部分电荷（如第1个原子带-0.23电荷），用于分析分子极性和反应性。
-
-  
-
-```
-
+标签`PUBCHEM_MMFF94_ENERGY`：用MMFF94力场计算的分子总能量（单位通常为kcal/mol），能量越低说明构象越稳定。
+```C
 > <PUBCHEM_MMFF94_ENERGY>
-
 39.5952
-
 ```
 
-- 标签`PUBCHEM_MMFF94_ENERGY`：用MMFF94力场计算的分子总能量（单位通常为kcal/mol），能量越低说明构象越稳定。
+### **4. 结构与活性属性**
 
-  
-  
+标签`PUBCHEM_PHARMACOPHORE_FEATURES`：记录分子的药效团特征（如“acceptor”表示氢键受体），用于药物设计中预测分子与靶点的结合能力。
 
-#### **4. 结构与活性属性**
-
-```
-
+```C
 > <PUBCHEM_PHARMACOPHORE_FEATURES>
-
 5
-
 1 2 acceptor
-
 1 3 acceptor
-
 ...（省略部分内容）
 
 ```
 
-- 标签`PUBCHEM_PHARMACOPHORE_FEATURES`：记录分子的药效团特征（如“acceptor”表示氢键受体），用于药物设计中预测分子与靶点的结合能力。
+标签`PUBCHEM_HEAVY_ATOM_COUNT`：表示分子中重原子（除H外的原子，如C、O）的总数，13个重原子说明分子属于中等大小的有机分子。
 
-  
-
-```
-
+```C
 > <PUBCHEM_HEAVY_ATOM_COUNT>
-
 13
-
 ```
 
-- 标签`PUBCHEM_HEAVY_ATOM_COUNT`：表示分子中重原子（除H外的原子，如C、O）的总数，13个重原子说明分子属于中等大小的有机分子。
-
-  
-  
-
-#### **5. 其他属性**
+### **5. 其他属性**
 
 还包括立体化学计数（如`PUBCHEM_ATOM_DEF_STEREO_COUNT`表示明确的立体中心数量）、转子数量（`PUBCHEM_EFFECTIVE_ROTOR_COUNT`表示可旋转键数量，影响分子柔性）、形状指纹（`PUBCHEM_SHAPE_FINGERPRINT`用于分子形状相似性比较）等，均为药物研发、化学分析中的关键参数。
 
-  
-  
-
-### **四、文件结束符**
-
-```
-
-$$$$
-
-```
-
+## **四、文件结束符/分割符**
 这是SDF文件的终止标志，表示整个文件结束。如果一个SDF文件包含多个分子（如化合物库），则每个分子结束后会有一个`$$$$`，并紧跟下一个分子的标题块。
 
-  
-  
-
-### **总结**
-
-该SDF文件完整记录了一个化合物（PubChem ID 2244）的核心信息：
-
-- **结构信息**：21个原子的空间坐标、21个化学键的连接方式（单键/双键）；
-
-- **属性信息**：数据库标识、构象参数、电荷与能量、药效团特征等。
-
-  
-
-这些信息可被化学软件（如ChemDraw、PyMOL）读取，用于分子可视化、性质计算、虚拟筛选等研究，是化学、药物研发领域数据交换的“通用语言”。
+```C
+$$$$
+```
