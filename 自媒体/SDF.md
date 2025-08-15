@@ -2,6 +2,15 @@ https://pubchem.ncbi.nlm.nih.gov/compound/2244
 https://en.wikipedia.org/wiki/Chemical_table_file#SDF
 ![image.png](https://s2.loli.net/2025/08/15/Xh8K59tnaDpl4Zz.png)
 
+
+从包含多个分子对接结果的结构sdf文件中提取能量最低的构象。下边的代码Ls.sdf是分子对接结果，-O L.sdf输出文件
+- `-f 26`：从第 26 个分子开始处理（`f` = first）。
+- `-l 26`：到第 26 个分子结束处理（`l` = last）。  
+    两者结合表示：**仅处理输入文件中序号为 26 的单个分子**（SDF 文件中分子按顺序编号，从 1 开始）
+```shell
+obabel Ls.sdf -f 26 -l 26 -O L.sdf
+```
+
 ## **一、标题块（Header Block）**
 
 SDF文件开头的前两行通常为标题信息，用于快速标识化合物或文件来源：
