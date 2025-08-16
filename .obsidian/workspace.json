@@ -11,10 +11,14 @@
             "id": "f9a14d2e080b8e12",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "基金标书.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "基金标书"
             }
           }
         ]
@@ -167,6 +171,7 @@
   },
   "active": "f9a14d2e080b8e12",
   "lastOpenFiles": [
+    "基金标书.md",
     "Gromacs/一文读懂PDB格式.md",
     "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
     "Media.md",
@@ -176,7 +181,6 @@
     "Gromacs/Gromacs环境配置.md",
     "Gromacs/SDF（Structure Data File）.md",
     "Gromacs/vina.md",
-    "自媒体",
-    "Untitled.md"
+    "自媒体"
   ]
 }
