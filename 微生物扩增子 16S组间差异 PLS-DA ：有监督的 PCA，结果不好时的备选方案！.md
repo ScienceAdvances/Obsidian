@@ -11,9 +11,7 @@ PCA（主成分分析）是微生物数据分析的 “常客”，但它有个�
 
 它只关注数据中最大的变异信息，不管样本的分组标签（比如 “对照组” 和 “处理组”）。如果组间差异信号被样本内的随机变异掩盖，PCA 就很难呈现清晰的分群。
 
-而 PLS-DA（偏最小二乘判别分析）是一种 **有监督的降维方法**：
-
-它会主动利用样本的分组信息（如 Group 标签），优先提取能区分不同组别的变异成分，让组间差异更明显。
+而 PLS-DA（偏最小二乘判别分析）是一种 **有监督的降维方法**：它会主动利用样本的分组信息（如 Group 标签），优先提取能区分不同组别的变异成分，让组间差异更明显。
 
 简单说：PCA 是 “让数据自己说话”，PLS-DA 是 “引导数据说出我们关心的话”。
 
@@ -23,9 +21,7 @@ PCA（主成分分析）是微生物数据分析的 “常客”，但它有个�
 
 ```
 # 加载必要的R包
-
 library(microeco)  # 微生物组分析工具包
-library(Canton)    # 绘图辅助包
 
 # 加载示例数据（可替换为你的OTU表）
 data(dataset)
@@ -87,7 +83,7 @@ Canton::gs(p2, outdir = outdir, name = "PLS-DA", w = 8, h = 7)
 ```
 
 ![image.png](https://s2.loli.net/2025/08/17/bzUFwpl9D7Lf8Au.png)
-- 这里我用自带的数据集演示 效果并没有太好 此外还可以尝试'PCoA', 'NMDS', 'PCA', 'DCA',  'OPLS-DA'方法但是注意'OPLS-DA'只用于两组数据分析
+- 这里我用自带的数据集演示 效果并没有太好，在我自己的数据上还可以。 此外还可以尝试'PCoA', 'NMDS', 'PCA', 'DCA',  'OPLS-DA'方法但是注意'OPLS-DA'只用于两组数据分析
 - `orthoI = 0`是`PLS-DA`模型下的默认参数，`predI = 2` ，ropls包的这个参数默认值是NA，理解起来也比较复杂。如果不指定的话再自带数据上没报错，但是在我自己的数据上报错
 
 ## 三、结果解读：3 个关键点
@@ -117,7 +113,7 @@ PLS-DA 不是 PCA 的 “替代品”，而是 “互补方案”—— 当你�
 （代码可直接复制使用，只需替换你的 OTU 表和样本信息哦～）
 
 ## 参考
-cal_ordination的yuan
+cal_ordination的源代码可以看看 每种方法的默认值，方便自己修改
 ```R
 function (method = "PCoA", ncomp = 2, taxa_level = NULL, NMDS_matrix = TRUE,
     trans = FALSE, scale_species = FALSE, scale_species_ratio = 0.8,
