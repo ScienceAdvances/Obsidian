@@ -117,6 +117,7 @@ PLS-DA 不是 PCA 的 “替代品”，而是 “互补方案”—— 当你�
 （代码可直接复制使用，只需替换你的 OTU 表和样本信息哦～）
 
 ## 参考
+cal_ordination的yuan
 ```R
 function (method = "PCoA", ncomp = 2, taxa_level = NULL, NMDS_matrix = TRUE,
     trans = FALSE, scale_species = FALSE, scale_species_ratio = 0.8,
@@ -250,54 +251,26 @@ function (method = "PCoA", ncomp = 2, taxa_level = NULL, NMDS_matrix = TRUE,
             loading <- scores(model, choices = 1:ncomp, display = "species") %>%          as.data.frame
 
             if (scale_species) {
-
                 for (i in 1:ncomp) {
-
                   maxratio <- max(abs(combined[, i]))/max(abs(loading[,
-
                     i]))
-
                   loading[, i] %<>% {
-
                     . * maxratio * scale_species_ratio
-
                   }
-
                 }
-
             }
-
-            loading[, "dist"] <- apply(loading, 1, function(x) {
-
-                sum(x^2)
-
-            })
-
-            loading <- loading[order(loading[, "dist"], decreasing = TRUE),
-
-                ]
-
+            loading[, "dist"] <- apply(loading, 1, function(x) {sum(x^2)})
+            loading <- loading[order(loading[, "dist"], decreasing = TRUE), ]
             outlist$loading <- loading
-
         }
-
     }
-
     outlist$ncomp <- ncomp
-
     self$res_ordination <- outlist
-
-    if (!is.null(taxa_level)) {
-
+    if (is.null(taxa_level)) {
         self$res_ordination$taxa_level <- taxa_level
-
     }
-
     message("The result is stored in object$res_ordination ...")
-
     self$ordination_method <- method
-
     invisible(self)
-
 }
 ```
