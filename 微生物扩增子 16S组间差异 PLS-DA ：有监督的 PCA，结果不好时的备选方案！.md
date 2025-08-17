@@ -247,8 +247,7 @@ function (method = "PCoA", ncomp = 2, taxa_level = NULL, NMDS_matrix = TRUE,
         combined <- cbind.data.frame(model$points, use_data$sample_table)
         outlist <- list(model = model, scores = combined)
         if (!NMDS_matrix) {
-            loading <- scores(model, choices = 1:ncomp, display = "species") %>%
-                as.data.frame
+            loading <- scores(model, choices = 1:ncomp, display = "species") %>%            as.data.frame
 
             if (scale_species) {
 
