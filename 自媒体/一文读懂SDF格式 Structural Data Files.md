@@ -1,9 +1,13 @@
-https://pubchem.ncbi.nlm.nih.gov/compound/2244
-https://en.wikipedia.org/wiki/Chemical_table_file#SDF
+结构数据格式（SDF）由分子设计有限公司（MDL）开发。SDF 文件是简单的 ASCII 文本文件，遵循严格的格式标准，用于表示多个化学结构记录及相关数据字段。我们从PubChem下载的化合物结构一般是sdf格式，Gnina的分子对接结果也是sdf格式。可以使用pymol等工具可视化。
+
+下边以阿司匹林的sdf文件为例，介绍下sdf格式
 ![image.png](https://s2.loli.net/2025/08/15/Xh8K59tnaDpl4Zz.png)
 
 
 从包含多个分子对接结果的结构sdf文件中提取能量最低的构象。下边的代码Ls.sdf是分子对接结果，-O L.sdf输出文件
+结构数据格式（SDF）由分子设计有限公司（MDL）开发。SDF 文件（也称为 SD 文件）是简单的 ASCII 文本文件，遵循严格的格式标准，用于表示多个化学结构记录及相关数据字段。
+[三行代码搞定AutoDock Vina批量分子对接](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/MRXdxKEOU9E4F9E__fWkXg)
+
 - `-f 26`：从第 26 个分子开始处理（`f` = first）。
 - `-l 26`：到第 26 个分子结束处理（`l` = last）。  
     两者结合表示：**仅处理输入文件中序号为 26 的单个分子**（SDF 文件中分子按顺序编号，从 1 开始）
@@ -50,10 +54,29 @@ SDF文件开头的前两行通常为标题信息，用于快速标识化合物�
 ```
 
 各字段含义（从左到右）：
-
-- `1.2333 0.5540 0.7792`：原子的三维坐标（单位通常为埃Å），分别对应X、Y、Z轴，用于确定原子在空间中的位置。
 - C：元素符号（此处为碳原子），其他行如O表示氧原子，`H`表示氢原子。
 - 后续12个`0`：分别表示原子的电荷（0为中性）、同位素标记（0为天然同位素）、立体化学构型（0为无特殊构型）、原子类型等（本例均为0，说明无特殊属性）。
+- `1.2333 0.5540 0.7792`：原子的三维坐标（单位通常为埃Å），分别对应X、Y、Z轴，用于确定原子在空间中的位置。因此可以根据是否有z轴信息判断出是否是3D结构，如果不是可以使用openbabel或者rdkit生成3D结构
+
+- `openbabel`
+```shell
+obabel 2D.sdf -O 3D.sdf --gen3d -addH -p 7.4
+```
+
+- `rdkit`
+```python
+from rdkit import Chem
+from rdkit.Chem import AllChem
+
+m1 = Chem.SDMolSupplier('2D.sdf')[0]
+m2 = Chem.AddHs(m1, addCoords=True)
+AllChem.EmbedMolecule(m2, randomSeed=1, enforceChirality=True)
+AllChem.UFFOptimizeMolecule(m2)
+
+with Chem.SDWriter('3D.sdf') as writer:
+    writer.write(m2)
+```
+
 
 ### **3. 键信息行（共21行，对应21个化学键）**
 
@@ -166,4 +189,10 @@ M END
 
 ```C
 $$$$
+```
+
+## Reference
+```C
+https://pubchem.ncbi.nlm.nih.gov/compound/2244
+https://en.wikipedia.org/wiki/Chemical_table_file#SDF
 ```

@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "43e88f834c852e77",
+        "id": "c7aad4c58f5c0d11",
         "type": "tabs",
         "children": [
           {
-            "id": "d68aa859cc295796",
+            "id": "85e6f9e3f6564b94",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "22582f71b046f3b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,18 +181,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d68aa859cc295796",
+  "active": "22582f71b046f3b8",
   "lastOpenFiles": [
-    "自媒体/SDF.md",
-    "自媒体/pdb format.md",
-    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
-    "Nasopharyngeal Carcinoma.md",
-    "Gromacs/vina.md",
+    "Untitled.md",
+    "conflict-files-obsidian-git.md",
+    "自媒体/一文读懂SDF格式 Structural Data Files.md",
     "Gromacs/Gromacs报错.md",
+    "Media.md",
+    "Gromacs/一文读懂PDB格式.md",
+    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
+    "Gromacs/SDF（Structure Data File）.md",
+    "Nasopharyngeal Carcinoma.md",
+    "自媒体/pdb format.md",
+    "Gromacs/vina.md",
     "自媒体",
     "Gromacs/Gromacs结果解释.md",
     "Gromacs/Gromacs环境配置.md",
-    "Gromacs/SDF（Structure Data File）.md",
     "SingleCell/CibersortX的替代者BayesPrism用单细胞数据去卷积得到普通转录组细胞类型比例.md",
     "Linux/WSL2安装Debian13.md",
     "SingleCell/质控/scDblFinder.md",
@@ -186,15 +209,11 @@
     "Gromacs",
     "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
     "文献阅读/一区23分超简单CT影像组学：肺病早筛的新利器.md",
-    "Media.md",
     "文献阅读/大队列CT胰腺癌PANDA 模型 医生结合AI后，病灶检测灵敏度提升 8.5%，胰腺癌识别灵敏度提升 20.5%，住院医师性能接近专家水平.md",
     "文献阅读/影像+病理+转录组+基因组+蛋白组多模态的胶质瘤分型 R包已发布可以直接使用 居然使用R语言分析的 ！.md",
     "文献阅读/影像组学多模态模型预测肺癌新辅助免疫化疗 作者开源模型 可以用于自己研究中直接提取特征或者经过微调后再提取特征.md",
     "文献阅读/促结缔组织增生性小圆细胞肿瘤（DSRCT）.md",
-    "NPCDB/NPCDB.md",
     "NPCDB",
-    "RNA/miRNA/miRDeep2分析流程.md",
-    "RNA/真核有参转录组测序报告.md",
     "SingleCell/质控",
     "SingleCell",
     "Pasted image 20250804200515.png",
