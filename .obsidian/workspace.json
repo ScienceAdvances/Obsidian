@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "22582f71b046f3b8",
+            "id": "6a0b6ac6c5580e66",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -181,10 +181,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "22582f71b046f3b8",
+  "active": "6a0b6ac6c5580e66",
   "lastOpenFiles": [
     "Untitled.md",
     "conflict-files-obsidian-git.md",
+    "微生物扩增子 16S组间差异 PLS-DA ：有监督的 PCA，结果不好时的备选方案！.md",
+    "基金标书.md",
+    "1.md",
     "自媒体/一文读懂SDF格式 Structural Data Files.md",
     "Gromacs/Gromacs报错.md",
     "Media.md",
@@ -210,9 +213,6 @@
     "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
     "文献阅读/一区23分超简单CT影像组学：肺病早筛的新利器.md",
     "文献阅读/大队列CT胰腺癌PANDA 模型 医生结合AI后，病灶检测灵敏度提升 8.5%，胰腺癌识别灵敏度提升 20.5%，住院医师性能接近专家水平.md",
-    "文献阅读/影像+病理+转录组+基因组+蛋白组多模态的胶质瘤分型 R包已发布可以直接使用 居然使用R语言分析的 ！.md",
-    "文献阅读/影像组学多模态模型预测肺癌新辅助免疫化疗 作者开源模型 可以用于自己研究中直接提取特征或者经过微调后再提取特征.md",
-    "文献阅读/促结缔组织增生性小圆细胞肿瘤（DSRCT）.md",
     "NPCDB",
     "SingleCell/质控",
     "SingleCell",

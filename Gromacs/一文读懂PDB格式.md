@@ -1,7 +1,7 @@
 最近在做分子对接和分子模拟，涉及到了一些盲区，必去pdb文件是按照列位数储存信息的，跟其他文件的空格或者制表符分割很不同，所以也可能出现一些错误，比如信息错位，因此有必要了深入解下结构相关的格式pdb、cif、sdf等等
 
 pdb的分子对接前处理包括去除非氨基酸残基、去水、加氢、末端修复等等，在上次的分子对接文章中用了get_pdb.py脚本利用pdbfixer  api和文本过滤，来处理蛋白结构。
-
+[三行代码搞定AutoDock Vina批量分子对接](https://mp.weixin.qq.com/s/MRXdxKEOU9E4F9E__fWkXg)
 坐标部分通过6种记录类型描述分子结构，彼此分工明确又相互关联。
 
 ![image.png](https://s2.loli.net/2025/08/14/gVGmpqo1HCOuDBn.png)
