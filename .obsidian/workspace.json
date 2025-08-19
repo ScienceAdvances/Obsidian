@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c7aad4c58f5c0d11",
+        "id": "b0488f240481a8bc",
         "type": "tabs",
         "children": [
           {
-            "id": "85e6f9e3f6564b94",
+            "id": "10b648e8df39e351",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "New tab"
             }
           }
         ]
@@ -166,10 +162,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "85e6f9e3f6564b94",
+  "active": "10b648e8df39e351",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Untitled.md",
+    "conflict-files-obsidian-git.md",
     "微生物扩增子 16S组间差异 PLS-DA ：有监督的 PCA，结果不好时的备选方案！.md",
     "基金标书.md",
     "1.md",
