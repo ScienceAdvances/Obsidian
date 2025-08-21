@@ -36,9 +36,8 @@ sudo apt install -y libfontconfig1-dev libharfbuzz-dev libfribidi-dev libcurl4-o
 
 sudo apt install -y libcairo2-dev jags libjags-dev
 ```
-
-```
 ## 安装R语言
+
 ```shell
 sudo apt update 
 sudo apt install r-base r-base-dev
