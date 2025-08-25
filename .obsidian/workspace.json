@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "8ca2032e549d3969",
+    "id": "f1a5889ba93b815b",
     "type": "split",
     "children": [
       {
-        "id": "59be4f8d3ba0c4e5",
+        "id": "520cf4083791fc7f",
         "type": "tabs",
         "children": [
           {
-            "id": "ad1fa03ce288e331",
+            "id": "df44fdf754111e37",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "孟德尔随机化.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "孟德尔随机化"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1571066c9ff6daef",
+    "id": "8e8827b5d9ec5026",
     "type": "split",
     "children": [
       {
-        "id": "aa7c293dd104ad58",
+        "id": "968f9dc1cc8fa3f3",
         "type": "tabs",
         "children": [
           {
-            "id": "d9a31fdb75c65239",
+            "id": "ee22a233c888b853",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +44,7 @@
             }
           },
           {
-            "id": "16125af5a57998e4",
+            "id": "85f1a4c000f532e3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "b7e1d61afbe3b996",
+            "id": "1e682506a7804300",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,19 +77,20 @@
     "width": 300
   },
   "right": {
-    "id": "a7cd8db810714de6",
+    "id": "a6637c55dfc59de2",
     "type": "split",
     "children": [
       {
-        "id": "ceb8b204d825b5d6",
+        "id": "5c0464c53fa3a1e0",
         "type": "tabs",
         "children": [
           {
-            "id": "230b2f26e78d5361",
+            "id": "f90261b6bf2c335a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,11 +100,11 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破"
             }
           },
           {
-            "id": "41013541ccbfd063",
+            "id": "9117f2ba440d4ac5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -120,7 +117,7 @@
             }
           },
           {
-            "id": "a918e0215a44e8ef",
+            "id": "4d18cb54e34bd0d0",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -135,7 +132,7 @@
             }
           },
           {
-            "id": "ac3cd1510b132119",
+            "id": "7fc2f095aa183591",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -157,64 +154,53 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad1fa03ce288e331",
+  "active": "df44fdf754111e37",
   "lastOpenFiles": [
-    "1.md",
     "Media.md",
+    "文献阅读/思路简单的CT的Transformer模型助力胃癌淋巴结转移早期预测.md",
+    "文献阅读/单细胞+空间转录组揭秘鼻咽癌中三级淋巴结构作用.md",
     "Nasopharyngeal Carcinoma.md",
-    "Untitled.md",
-    "微生物/微生物扩增子 16S组间差异 PLS-DA ：有监督的 PCA，结果不好时的备选方案！.md",
-    "孟德尔随机化.md",
-    "微生物",
-    "Linux/WSL2安装Debian13.md",
-    "conflict-files-obsidian-git.md",
-    "基金标书.md",
-    "自媒体/一文读懂SDF格式 Structural Data Files.md",
+    "1.md",
+    "().md",
+    "Vision/病理组+影像组 内容框架.md",
     "Gromacs/Gromacs报错.md",
-    "Gromacs/一文读懂PDB格式.md",
-    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
-    "Gromacs/SDF（Structure Data File）.md",
-    "自媒体/pdb format.md",
-    "Gromacs/vina.md",
-    "自媒体",
-    "Gromacs/Gromacs结果解释.md",
-    "Gromacs/Gromacs环境配置.md",
-    "SingleCell/CibersortX的替代者BayesPrism用单细胞数据去卷积得到普通转录组细胞类型比例.md",
-    "SingleCell/质控/scDblFinder.md",
-    "Untitled.canvas",
-    "RNA/lncRNA/lncRNA测序报告.md",
-    "NPCDB/NPC marker.md",
-    "文献阅读/prompt.md",
-    "SingleCell/细胞类型注释.md",
-    "Linux",
-    "Gromacs",
     "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
-    "NPCDB",
+    "文献阅读/影像组学多模态模型预测肺癌新辅助免疫化疗 作者开源模型 可以用于自己研究中直接提取特征或者经过微调后再提取特征.md",
+    "文献阅读/大队列CT胰腺癌PANDA 模型 医生结合AI后，病灶检测灵敏度提升 8.5%，胰腺癌识别灵敏度提升 20.5%，住院医师性能接近专家水平.md",
+    "文献阅读/一区23分超简单CT影像组学：肺病早筛的新利器.md",
+    "文献阅读/促结缔组织增生性小圆细胞肿瘤（DSRCT）.md",
+    "文献阅读/影像+病理+转录组+基因组+蛋白组多模态的胶质瘤分型 R包已发布可以直接使用 居然使用R语言分析的 ！.md",
+    "Vision/学习资源.md",
+    "孟德尔随机化小试 从软件安装数据下载到多种检验.md",
+    "Vision",
+    "基金标书.md",
+    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
+    "自媒体/一文读懂SDF格式 Structural Data Files.md",
+    "自媒体",
+    "文献阅读/prompt.md",
+    "文献阅读",
+    "微生物/微生物扩增子 16S组间差异 PLS-DA ：有监督的 PCA，结果不好时的备选方案！.md",
+    "微生物",
+    "SingleCell/质控/scDblFinder.md",
+    "SingleCell/细胞类型注释.md",
     "SingleCell/质控",
+    "SingleCell/CibersortX的替代者BayesPrism用单细胞数据去卷积得到普通转录组细胞类型比例.md",
     "SingleCell",
-    "Pasted image 20250804200515.png",
+    "RNA/miRNA/miRNA测序报告.md",
+    "RNA/miRNA/miRDeep2分析流程.md",
     "RNA/miRNA",
-    "Pasted image 20250804221129 1.png",
-    "Untitled 1.canvas",
-    "Pasted image 20250804213348.png",
-    "Pasted image 20250804202441.png",
-    "Pasted image 20250804213809.png",
-    "Pasted image 20250804220645.png",
-    "Pasted image 20250804220704.png",
-    "Pasted image 20250804220734.png",
-    "Pasted image 20250804221129.png",
-    "Pasted image 20250804201350.png",
     "RNA/lncRNA",
-    "Untitled/lncRNA"
+    "RNA",
+    "NPCDB"
   ]
 }

@@ -1,7 +1,3 @@
 {
-  "theme": "moonstone",
-  "accentColor": "",
-  "cssTheme": "Minimal",
-  "baseFontSize": 18,
-  "nativeMenus": false
+  "theme": "moonstone"
 }
