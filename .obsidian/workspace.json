@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "03c224a67c4dfded",
+        "id": "f5b9bfe0a9be39fb",
         "type": "tabs",
         "children": [
           {
-            "id": "f77c50b97c5533c4",
+            "id": "a5be2e6de7b06679",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -164,8 +164,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f77c50b97c5533c4",
+  "active": "a5be2e6de7b06679",
   "lastOpenFiles": [
+    "NCBI NR物种注释.md",
+    "孟德尔随机化小试 从软件安装数据下载到多种检验.md",
+    "Methods.md",
+    "MEGAN.md",
+    "单细胞可视化新技能：用SeuratExtend同时展示3个基因的表达！.md",
     "文献阅读/单细胞+空间转录组揭秘鼻咽癌中三级淋巴结构作用.md",
     "文献阅读/思路简单的CT的Transformer模型助力胃癌淋巴结转移早期预测.md",
     "文献阅读/影像+病理+转录组+基因组+蛋白组多模态的胶质瘤分型 R包已发布可以直接使用 居然使用R语言分析的 ！.md",
@@ -177,7 +182,6 @@
     "自媒体/一文读懂SDF格式 Structural Data Files.md",
     "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
     "Media.md",
-    "Untitled.md",
     "Nasopharyngeal Carcinoma.md",
     "1.md",
     "().md",
@@ -185,7 +189,6 @@
     "Gromacs/Gromacs报错.md",
     "文献阅读/影像组学多模态模型预测肺癌新辅助免疫化疗 作者开源模型 可以用于自己研究中直接提取特征或者经过微调后再提取特征.md",
     "Vision/学习资源.md",
-    "孟德尔随机化小试 从软件安装数据下载到多种检验.md",
     "Vision",
     "基金标书.md",
     "自媒体",
@@ -193,10 +196,7 @@
     "文献阅读",
     "微生物/微生物扩增子 16S组间差异 PLS-DA ：有监督的 PCA，结果不好时的备选方案！.md",
     "微生物",
-    "SingleCell/质控/scDblFinder.md",
-    "SingleCell/细胞类型注释.md",
     "SingleCell/质控",
-    "SingleCell/CibersortX的替代者BayesPrism用单细胞数据去卷积得到普通转录组细胞类型比例.md",
     "SingleCell",
     "RNA/miRNA",
     "RNA/lncRNA",
