@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6969f4abcad795a7",
+        "id": "fc819b30f8f01e46",
         "type": "tabs",
         "children": [
           {
-            "id": "eec3172d426e4b79",
+            "id": "71cabba075046e80",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -163,8 +163,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eec3172d426e4b79",
+  "active": "71cabba075046e80",
   "lastOpenFiles": [
+    "单细胞 + 类器官挖出预后新标志物.md",
     "Gromacs/Gromacs环境配置.md",
     "Gromacs/Gromacs报错.md",
     "文献阅读/IF10+公共数据库挖掘单细胞+空间转录 组蛋白乳酸 新思路.md"
