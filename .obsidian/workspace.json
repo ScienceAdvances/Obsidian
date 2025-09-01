@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "03c224a67c4dfded",
+        "id": "65842491aaa31571",
         "type": "tabs",
         "children": [
           {
-            "id": "f77c50b97c5533c4",
+            "id": "16f2f0b1a46e479b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "RNA/lncRNA/汇总.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "汇总"
             }
           }
         ]
@@ -164,39 +168,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f77c50b97c5533c4",
+  "active": "16f2f0b1a46e479b",
   "lastOpenFiles": [
+    "RNA/lncRNA/分析流程.md",
+    "RNA/lncRNA/lncRNA测序报告.md",
+    "Gromacs/Gromacs环境配置.md",
+    "RNA/lncRNA/汇总.md",
+    "estimate.md",
+    "文献阅读/仅有一张Fig的8分文章 胞外囊泡lncRNA+ CT 多模态融合模型，AUC 最高达 94.8%.md",
+    "文献阅读/放射科医生的新搭档：BrainGPT 让 3D 脑 CT 报告效率翻倍.md",
+    "文献阅读/IF10+公共数据库挖掘单细胞+空间转录 组蛋白乳酸 新思路.md",
+    "基金标书.md",
+    "自媒体/孟德尔随机化小试 从软件安装数据下载到多种检验.md",
+    "Media.md",
+    "自媒体/一文看懂 Mantel 相关性连线图：万物互联 X与Y的关联原来这么可视化！.md",
     "文献阅读/单细胞+空间转录组揭秘鼻咽癌中三级淋巴结构作用.md",
+    "Nasopharyngeal Carcinoma.md",
+    "文献阅读/促结缔组织增生性小圆细胞肿瘤（DSRCT）.md",
     "文献阅读/思路简单的CT的Transformer模型助力胃癌淋巴结转移早期预测.md",
     "文献阅读/影像+病理+转录组+基因组+蛋白组多模态的胶质瘤分型 R包已发布可以直接使用 居然使用R语言分析的 ！.md",
     "文献阅读/一区23分超简单CT影像组学：肺病早筛的新利器.md",
-    "文献阅读/促结缔组织增生性小圆细胞肿瘤（DSRCT）.md",
     "文献阅读/大队列CT胰腺癌PANDA 模型 医生结合AI后，病灶检测灵敏度提升 8.5%，胰腺癌识别灵敏度提升 20.5%，住院医师性能接近专家水平.md",
     "NPCDB/NPCDB.md",
     "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
     "自媒体/一文读懂SDF格式 Structural Data Files.md",
     "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
-    "Media.md",
-    "Untitled.md",
-    "Nasopharyngeal Carcinoma.md",
     "1.md",
     "().md",
     "Vision/病理组+影像组 内容框架.md",
-    "Gromacs/Gromacs报错.md",
-    "文献阅读/影像组学多模态模型预测肺癌新辅助免疫化疗 作者开源模型 可以用于自己研究中直接提取特征或者经过微调后再提取特征.md",
-    "Vision/学习资源.md",
-    "孟德尔随机化小试 从软件安装数据下载到多种检验.md",
     "Vision",
-    "基金标书.md",
     "自媒体",
-    "文献阅读/prompt.md",
     "文献阅读",
-    "微生物/微生物扩增子 16S组间差异 PLS-DA ：有监督的 PCA，结果不好时的备选方案！.md",
     "微生物",
-    "SingleCell/质控/scDblFinder.md",
-    "SingleCell/细胞类型注释.md",
     "SingleCell/质控",
-    "SingleCell/CibersortX的替代者BayesPrism用单细胞数据去卷积得到普通转录组细胞类型比例.md",
     "SingleCell",
     "RNA/miRNA",
     "RNA/lncRNA",
