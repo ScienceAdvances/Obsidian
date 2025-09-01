@@ -1,32 +1,20 @@
 {
   "main": {
-    "id": "f1a5889ba93b815b",
+    "id": "8ed02023e9979608",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "f5b9bfe0a9be39fb",
+        "id": "6969f4abcad795a7",
         "type": "tabs",
         "children": [
           {
-            "id": "a5be2e6de7b06679",
-=======
-        "id": "65842491aaa31571",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "16f2f0b1a46e479b",
->>>>>>> 712e9e7870b96e06cc981b8b346ceb258e3f1811
+            "id": "eec3172d426e4b79",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RNA/lncRNA/汇总.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "汇总"
+              "title": "New tab"
             }
           }
         ]
@@ -35,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8e8827b5d9ec5026",
+    "id": "dd18778124d75370",
     "type": "split",
     "children": [
       {
-        "id": "968f9dc1cc8fa3f3",
+        "id": "df5ca4944ab60be6",
         "type": "tabs",
         "children": [
           {
-            "id": "ee22a233c888b853",
+            "id": "e36fef15d6797e6e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +44,7 @@
             }
           },
           {
-            "id": "85f1a4c000f532e3",
+            "id": "2ba19975abb4f210",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -73,7 +61,7 @@
             }
           },
           {
-            "id": "1e682506a7804300",
+            "id": "daf31a8f49a10f43",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -89,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "a6637c55dfc59de2",
+    "id": "406f3e894ba202f8",
     "type": "split",
     "children": [
       {
-        "id": "5c0464c53fa3a1e0",
+        "id": "c18a407e60ad624c",
         "type": "tabs",
         "children": [
           {
-            "id": "f90261b6bf2c335a",
+            "id": "1fdbdd39647495cf",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,11 +99,11 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "9117f2ba440d4ac5",
+            "id": "722bc6da1c416d7f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -129,7 +116,7 @@
             }
           },
           {
-            "id": "4d18cb54e34bd0d0",
+            "id": "dff5fa58014972f2",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -144,7 +131,7 @@
             }
           },
           {
-            "id": "7fc2f095aa183591",
+            "id": "fa30622149172a81",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -176,64 +163,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-<<<<<<< HEAD
-  "active": "a5be2e6de7b06679",
+  "active": "eec3172d426e4b79",
   "lastOpenFiles": [
-    "NCBI NR物种注释.md",
-    "孟德尔随机化小试 从软件安装数据下载到多种检验.md",
-    "Methods.md",
-    "MEGAN.md",
-    "单细胞可视化新技能：用SeuratExtend同时展示3个基因的表达！.md",
-=======
-  "active": "16f2f0b1a46e479b",
-  "lastOpenFiles": [
-    "RNA/lncRNA/分析流程.md",
-    "RNA/lncRNA/lncRNA测序报告.md",
     "Gromacs/Gromacs环境配置.md",
-    "RNA/lncRNA/汇总.md",
-    "estimate.md",
-    "文献阅读/仅有一张Fig的8分文章 胞外囊泡lncRNA+ CT 多模态融合模型，AUC 最高达 94.8%.md",
-    "文献阅读/放射科医生的新搭档：BrainGPT 让 3D 脑 CT 报告效率翻倍.md",
-    "文献阅读/IF10+公共数据库挖掘单细胞+空间转录 组蛋白乳酸 新思路.md",
-    "基金标书.md",
-    "自媒体/孟德尔随机化小试 从软件安装数据下载到多种检验.md",
-    "Media.md",
-    "自媒体/一文看懂 Mantel 相关性连线图：万物互联 X与Y的关联原来这么可视化！.md",
->>>>>>> 712e9e7870b96e06cc981b8b346ceb258e3f1811
-    "文献阅读/单细胞+空间转录组揭秘鼻咽癌中三级淋巴结构作用.md",
-    "Nasopharyngeal Carcinoma.md",
-    "文献阅读/促结缔组织增生性小圆细胞肿瘤（DSRCT）.md",
-    "文献阅读/思路简单的CT的Transformer模型助力胃癌淋巴结转移早期预测.md",
-    "文献阅读/影像+病理+转录组+基因组+蛋白组多模态的胶质瘤分型 R包已发布可以直接使用 居然使用R语言分析的 ！.md",
-    "文献阅读/一区23分超简单CT影像组学：肺病早筛的新利器.md",
-    "文献阅读/大队列CT胰腺癌PANDA 模型 医生结合AI后，病灶检测灵敏度提升 8.5%，胰腺癌识别灵敏度提升 20.5%，住院医师性能接近专家水平.md",
-    "NPCDB/NPCDB.md",
-    "文献阅读/GIST 复发风险预测升级！影像 + 病理 + 临床多模态模型来了，精准度再突破.md",
-    "自媒体/一文读懂SDF格式 Structural Data Files.md",
-    "自媒体/三行代码搞定AutoDock Vina批量分子对接.md",
-<<<<<<< HEAD
-    "Media.md",
-    "Nasopharyngeal Carcinoma.md",
-    "1.md",
-    "().md",
-    "Vision/病理组+影像组 内容框架.md",
     "Gromacs/Gromacs报错.md",
-    "文献阅读/影像组学多模态模型预测肺癌新辅助免疫化疗 作者开源模型 可以用于自己研究中直接提取特征或者经过微调后再提取特征.md",
-    "Vision/学习资源.md",
-=======
-    "1.md",
-    "().md",
-    "Vision/病理组+影像组 内容框架.md",
->>>>>>> 712e9e7870b96e06cc981b8b346ceb258e3f1811
-    "Vision",
-    "自媒体",
-    "文献阅读",
-    "微生物",
-    "SingleCell/质控",
-    "SingleCell",
-    "RNA/miRNA",
-    "RNA/lncRNA",
-    "RNA",
-    "NPCDB"
+    "文献阅读/IF10+公共数据库挖掘单细胞+空间转录 组蛋白乳酸 新思路.md"
   ]
 }
