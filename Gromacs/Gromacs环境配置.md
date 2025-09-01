@@ -55,3 +55,19 @@ gmx --version
 mamba create -n acpype -c conda-forge acpype python=3.9
 mamba activate acpype
 ```
+
+
+## 无root 无GPU
+
+安装acpype用于小分子准备
+```shell
+mamba create -n gromacs -c conda-forge acpype python=3.9
+mamba activate gromacs
+```
+
+## 下载gromacs
+```shell
+wget https://ftp.gromacs.org/gromacs/gromacs-2025.3.tar.gz
+md5sum gromacs-2025.3.tar.gz
+tar -xf gromacs-2025.3.tar.gz
+```
