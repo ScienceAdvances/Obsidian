@@ -11,10 +11,14 @@
             "id": "71cabba075046e80",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Media.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Media"
             }
           }
         ]
@@ -165,6 +169,8 @@
   },
   "active": "71cabba075046e80",
   "lastOpenFiles": [
+    "Nasopharyngeal Carcinoma.md",
+    "NCBI NR物种注释.md",
     "单细胞 + 类器官挖出预后新标志物.md",
     "Gromacs/Gromacs环境配置.md",
     "Gromacs/Gromacs报错.md",
