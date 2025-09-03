@@ -4,24 +4,123 @@
     "type": "split",
     "children": [
       {
-        "id": "fc819b30f8f01e46",
+        "id": "ac86e9c5438de47a",
         "type": "tabs",
         "children": [
           {
-            "id": "71cabba075046e80",
+            "id": "a2ab2cb6a91f363f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Media.md",
+                "file": "Visualization/PCA PCA 3D.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Media"
+              "title": "PCA PCA 3D"
+            }
+          },
+          {
+            "id": "a3a7a581d127d99f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visualization/Heatmap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Heatmap"
+            }
+          },
+          {
+            "id": "24b002829e3847f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visualization/Quality Control Plot.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Quality Control Plot"
+            }
+          },
+          {
+            "id": "b3de54548cf6970f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "相关性热图.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "相关性热图"
+            }
+          },
+          {
+            "id": "1bd1b50e64b56eb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visualization/line plot.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "line plot"
+            }
+          },
+          {
+            "id": "73368a91be7cc5bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visualization/Sankey diagram.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sankey diagram"
+            }
+          },
+          {
+            "id": "f4f3b7d88d38fa41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visualization/Venn.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Venn"
+            }
+          },
+          {
+            "id": "5477edde9af9c1cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visualization/火山图.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "火山图"
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -164,13 +263,26 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "vscode-editor:Create Code File": false
     }
   },
-  "active": "71cabba075046e80",
+  "active": "e36fef15d6797e6e",
   "lastOpenFiles": [
+    "Visualization/Venn.md",
+    "Visualization/火山图.md",
+    "Visualization/Sankey diagram.md",
+    "Visualization/line plot.md",
+    "相关性热图.md",
+    "Visualization/Quality Control Plot.md",
+    "Visualization/Heatmap.md",
+    "Visualization/PCA PCA 3D.md",
+    "Visualization",
     "Nasopharyngeal Carcinoma.md",
     "NCBI NR物种注释.md",
+    "Methods.md",
+    "微生物/MEGAN.md",
+    "Media.md",
     "单细胞 + 类器官挖出预后新标志物.md",
     "Gromacs/Gromacs环境配置.md",
     "Gromacs/Gromacs报错.md",
