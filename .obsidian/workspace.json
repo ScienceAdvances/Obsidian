@@ -4,123 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "ac86e9c5438de47a",
+        "id": "bdbd38007bc9c9ae",
         "type": "tabs",
         "children": [
           {
-            "id": "a2ab2cb6a91f363f",
+            "id": "42ca773d535937d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Visualization/PCA PCA 3D.md",
+                "file": "基金标书.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PCA PCA 3D"
+              "title": "基金标书"
             }
           },
           {
-            "id": "a3a7a581d127d99f",
+            "id": "2b0abd4f82af7754",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Visualization/Heatmap.md",
+                "file": "肿瘤精准医学基因组临床分析与诊断/第一章　基因表达系统模型在肿瘤精准治疗中的临床应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Heatmap"
+              "title": "第一章　基因表达系统模型在肿瘤精准治疗中的临床应用"
             }
           },
           {
-            "id": "24b002829e3847f8",
+            "id": "7cdb8ae9d4c86307",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Visualization/Quality Control Plot.md",
+                "file": "肿瘤精准医学基因组临床分析与诊断/第二章 个体化精准医学的单核苷酸多态性检测.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quality Control Plot"
+              "title": "第二章 个体化精准医学的单核苷酸多态性检测"
             }
           },
           {
-            "id": "b3de54548cf6970f",
+            "id": "6ecf96013815ec20",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "相关性热图.md",
+                "file": "单细胞组学基础/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "相关性热图"
-            }
-          },
-          {
-            "id": "1bd1b50e64b56eb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Visualization/line plot.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "line plot"
-            }
-          },
-          {
-            "id": "73368a91be7cc5bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Visualization/Sankey diagram.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sankey diagram"
-            }
-          },
-          {
-            "id": "f4f3b7d88d38fa41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Visualization/Venn.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Venn"
-            }
-          },
-          {
-            "id": "5477edde9af9c1cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Visualization/火山图.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "火山图"
+              "title": "Untitled"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -269,21 +213,30 @@
   },
   "active": "e36fef15d6797e6e",
   "lastOpenFiles": [
-    "Visualization/Venn.md",
+    "肿瘤精准医学基因组临床分析与诊断/第二章 个体化精准医学的单核苷酸多态性检测.md",
+    "单细胞组学基础/Untitled.md",
+    "单细胞组学基础",
+    "肿瘤精准医学基因组临床分析与诊断/第一章　基因表达系统模型在肿瘤精准治疗中的临床应用.md",
+    "肿瘤精准医学基因组临床分析与诊断",
+    "基金标书.md",
+    "Nasopharyngeal Carcinoma.md",
+    "Media.md",
+    "Methods.md",
+    "estimate.md",
+    "文献阅读/单细胞 + 类器官挖出预后新标志物.md",
+    "conflict-files-obsidian-git.md",
+    "微生物/NCBI NR物种注释.md",
+    "SingleCell/单细胞组学基础.md",
     "Visualization/火山图.md",
+    "Visualization/Venn.md",
     "Visualization/Sankey diagram.md",
     "Visualization/line plot.md",
-    "相关性热图.md",
+    "Visualization/相关性热图.md",
     "Visualization/Quality Control Plot.md",
     "Visualization/Heatmap.md",
     "Visualization/PCA PCA 3D.md",
     "Visualization",
-    "Nasopharyngeal Carcinoma.md",
-    "NCBI NR物种注释.md",
-    "Methods.md",
     "微生物/MEGAN.md",
-    "Media.md",
-    "单细胞 + 类器官挖出预后新标志物.md",
     "Gromacs/Gromacs环境配置.md",
     "Gromacs/Gromacs报错.md",
     "文献阅读/IF10+公共数据库挖掘单细胞+空间转录 组蛋白乳酸 新思路.md"
