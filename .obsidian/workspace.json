@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9dfc714a66415071",
+        "id": "c0cbbecc53cc523c",
         "type": "tabs",
         "children": [
           {
-            "id": "89c542cdd0d7a81d",
+            "id": "22f3a6651b6d8dec",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "406f3e894ba202f8",
@@ -160,19 +161,19 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false,
-      "vscode-editor:Create Code File": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89c542cdd0d7a81d",
+  "active": "22f3a6651b6d8dec",
   "lastOpenFiles": [
+    "怎么成为数据分析师.md",
+    "统计学/统计学10 均匀分布.md",
     "统计学/统计学08 区间估计与置信区间.md",
     "统计学/统计学09 协方差和相关系数.md",
     "统计学/统计学10 几何分布、负二项分布.md",
     "统计学/统计学11  契比雪夫不等式.md",
-    "统计学12  最大似然估计.md",
-    "统计学13 P值校正q-value、FDR、BH.md",
-    "统计学10 均匀分布.md",
+    "统计学/统计学12  最大似然估计.md",
+    "统计学/统计学13 P值校正q-value、FDR、BH.md",
     "统计学/统计学07 F分布与ANOVA.md",
     "统计学/统计学06 卡方分布.md",
     "统计学/统计学05 假设检验、t分布、t检验.md",
@@ -194,7 +195,6 @@
     "Media.md",
     "Methods.md",
     "estimate.md",
-    "文献阅读/单细胞 + 类器官挖出预后新标志物.md",
     "Visualization"
   ]
 }
