@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c0cbbecc53cc523c",
+        "id": "d0b49b4eeff7eae1",
         "type": "tabs",
         "children": [
           {
-            "id": "22f3a6651b6d8dec",
+            "id": "437d494ceaa2f791",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -164,7 +164,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "22f3a6651b6d8dec",
+  "active": "437d494ceaa2f791",
   "lastOpenFiles": [
     "怎么成为数据分析师.md",
     "统计学/统计学10 均匀分布.md",
