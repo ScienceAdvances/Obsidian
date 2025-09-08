@@ -4,67 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "bdbd38007bc9c9ae",
+        "id": "9dfc714a66415071",
         "type": "tabs",
         "children": [
           {
-            "id": "42ca773d535937d4",
+            "id": "89c542cdd0d7a81d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "基金标书.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "基金标书"
-            }
-          },
-          {
-            "id": "2b0abd4f82af7754",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "肿瘤精准医学基因组临床分析与诊断/第一章　基因表达系统模型在肿瘤精准治疗中的临床应用.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "第一章　基因表达系统模型在肿瘤精准治疗中的临床应用"
-            }
-          },
-          {
-            "id": "7cdb8ae9d4c86307",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "肿瘤精准医学基因组临床分析与诊断/第二章 个体化精准医学的单核苷酸多态性检测.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "第二章 个体化精准医学的单核苷酸多态性检测"
-            }
-          },
-          {
-            "id": "6ecf96013815ec20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "单细胞组学基础/Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,10 +164,28 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "e36fef15d6797e6e",
+  "active": "89c542cdd0d7a81d",
   "lastOpenFiles": [
-    "肿瘤精准医学基因组临床分析与诊断/第二章 个体化精准医学的单核苷酸多态性检测.md",
+    "统计学/统计学08 区间估计与置信区间.md",
+    "统计学/统计学09 协方差和相关系数.md",
+    "统计学/统计学10 几何分布、负二项分布.md",
+    "统计学/统计学11  契比雪夫不等式.md",
+    "统计学12  最大似然估计.md",
+    "统计学13 P值校正q-value、FDR、BH.md",
+    "统计学10 均匀分布.md",
+    "统计学/统计学07 F分布与ANOVA.md",
+    "统计学/统计学06 卡方分布.md",
+    "统计学/统计学05 假设检验、t分布、t检验.md",
+    "统计学/统计学04  二项分布、超几何分布.md",
+    "统计学",
+    "统计学/统计学03 泊松分布和指数分布.md",
+    "统计学/统计学02  二项分布.md",
+    "统计学/统计学01 中心极限定律、正态分布、z-score.md",
+    "微生物/NCBI NR物种注释.md",
+    "微生物/微生物扩增子 16S组间差异 PLS-DA ：有监督的 PCA，结果不好时的备选方案！.md",
+    "微生物/Untitled.md",
     "单细胞组学基础/Untitled.md",
+    "肿瘤精准医学基因组临床分析与诊断/第二章 个体化精准医学的单核苷酸多态性检测.md",
     "单细胞组学基础",
     "肿瘤精准医学基因组临床分析与诊断/第一章　基因表达系统模型在肿瘤精准治疗中的临床应用.md",
     "肿瘤精准医学基因组临床分析与诊断",
@@ -224,21 +195,6 @@
     "Methods.md",
     "estimate.md",
     "文献阅读/单细胞 + 类器官挖出预后新标志物.md",
-    "conflict-files-obsidian-git.md",
-    "微生物/NCBI NR物种注释.md",
-    "SingleCell/单细胞组学基础.md",
-    "Visualization/火山图.md",
-    "Visualization/Venn.md",
-    "Visualization/Sankey diagram.md",
-    "Visualization/line plot.md",
-    "Visualization/相关性热图.md",
-    "Visualization/Quality Control Plot.md",
-    "Visualization/Heatmap.md",
-    "Visualization/PCA PCA 3D.md",
-    "Visualization",
-    "微生物/MEGAN.md",
-    "Gromacs/Gromacs环境配置.md",
-    "Gromacs/Gromacs报错.md",
-    "文献阅读/IF10+公共数据库挖掘单细胞+空间转录 组蛋白乳酸 新思路.md"
+    "Visualization"
   ]
 }

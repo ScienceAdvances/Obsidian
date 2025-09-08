@@ -16,11 +16,6 @@
 | **分类数据库**             | **taxdump.tar.gz**                   | **2025-08-26** | 含nodes.dmp（分类层级）、names.dmp（物种名称） |
 | **Accession-TaxID映射** | **prot.accession2taxid.FULL.gz**<br> | **2025-08-22** | 蛋白序列与TaxID对应关系                   |
 |                       |                                      |                |                                  |
-|                       |                                      |                |                                  |
-|                       |                                      |                |                                  |
-|                       |                                      |                |                                  |
-|                       |                                      |                |                                  |
-|                       |                                      |                |                                  |
 microNR
 ```shell
 # bacteria, archaea,virus, fungi
@@ -91,7 +86,7 @@ diamond blastp \
 --evalue 1e-03 \
 --top 10 \
 --sensitive \
---outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore staxids sscinames \
+--outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore staxids sscinames salltitles \
 --include-lineage \
 --out diamond
 ```
@@ -110,34 +105,31 @@ diamond blastp \
         若设置为`-F 0`则关闭过滤，适用于需要保留低复杂度区域（如研究特定重复序列功能）的场景，但可能增加假阳性。
 
 ```
-taxonkit reformat \
---format "{d}\t{p}\t{c}\t{o}\t{f}\t{g}\t{s}" \
---data-dir taxdump \
---prefix-d "k__" \
---taxid-field 3 \
+taxonkit reformat2 \
+--taxid-field 13 \
+--format "d__{domain|acellular root|superkingdom}\tp__{phylum}\tc__{class}\to__{order}\tf__{family}\tg__{genus}\ts__{species}" \
+--data-dir microNR/taxdump \
+--no-ranks \
 --fill-miss-rank \
---add-prefix \
---threads 16 \
+--threads 45 \
 --out-file taxonkit.tsv \
-diamond.txt
+diamond
 ```
 
-合并 join
+得到taxonkit.tsv 后一个基因id对应多个物种，可以后续考虑设计一个打分方法根据分数选择一个最优的注释，
+1. 首先选择注释等级最精细删除注释不那么精细的
+2. 如果这时注释等级相同，那么删除带有uncultured的注释
+3. 从doamin开始往后对比，找到开始不一样的等级，统计此等级注释分别的频率，多数服从少数，保留多数注释
+4. 按照3的方法继续往后筛选，直到仅有一条注释位置
+5. 如果此时仍然有多余一条注释，那么选择他们等级相同的注释为最终注释（比如仅注释到目水平，后边的注释信息因为不同所以舍弃）
 
-```
-import dask.dataframe as dd
-df_left = dd.read_csv("/home/data/wd/Vik/X207/Result/alig_result.xls",sep="\t",header=None)
-df_right = dd.read_csv("/home/data/wd/Vik/X207/Result/prot.accession2taxid.FULL",sep="\t")
-result = df_left.merge(df_right, left_on=1,right_on="accession.version", how="inner")
-result.to_csv("/home/data/wd/Vik/X207/tmp/output_*.tsv", index=False, single_file=False,sep="\t",header=False)
-cat output_*.tsv > acc_taxid.xls
-awk -F'\t' '$3!=""' acc_taxid.xls > acc_taxid_filter.xls
-
-zcat /home/data/wd/Vik/X207/DB/salmon.counts.xls.gz | head -n 3000 | \
-awk 'BEGIN {FS=OFS="\t"} 
-     NR==FNR {b[$1]=1; next} 
-     FNR>1 && ($1 in b) {print $0}' /home/data/wd/Vik/X207/Result/taxnomy.xls - > /home/data/wd/Vik/X207/Result/count.xls
-
+```R
+Canton::using(data.table)
+a=fread('/home/zktbk0/Alex/taxonkit.tsv.gz')
+b=data.table::unique(a)
+dt <- b[V4 != "p__"]
+data.table::setorder(dt, V1)
+fwrite(head(dt,1000),'1.ccsv')
 ```
 
 diamond + MEGAN
@@ -221,12 +213,17 @@ $megan/rma2info \
 
 ## Reference
 
-[https://software-ab.cs.uni-tuebingen.de/download/megan6/welcome.html](https://software-ab.cs.uni-tuebingen.de/download/megan6/welcome.html)
+- [https://software-ab.cs.uni-tuebingen.de/download/megan6/welcome.html](https://software-ab.cs.uni-tuebingen.de/download/megan6/welcome.html)
+- [https://github.com/husonlab/megan-ce](https://github.com/husonlab/megan-ce)
+- [https://software-ab.cs.uni-tuebingen.de/download/megan6/manual.pdf](https://software-ab.cs.uni-tuebingen.de/download/megan6/manual.pdf)
+- [https://blog.csdn.net/woodcorpse/article/details/104381643](https://blog.csdn.net/woodcorpse/article/details/104381643)
+- https://www.jianshu.com/p/1d6edfcb4110
 
-[https://github.com/husonlab/megan-ce](https://github.com/husonlab/megan-ce)
 
-[https://software-ab.cs.uni-tuebingen.de/download/megan6/manual.pdf](https://software-ab.cs.uni-tuebingen.de/download/megan6/manual.pdf)
+一、前列腺癌甲基化预后标志物筛选系统​
 
-[https://blog.csdn.net/woodcorpse/article/details/104381643](https://blog.csdn.net/woodcorpse/article/details/104381643)
+该系统聚焦前列腺癌甲基化数据的深度挖掘与预后标志物筛选，具备完整的 “数据获取 - 处理 - 分析 - 成果输出” 闭环功能。首先，通过自动化接口精准下载 TCGA 数据库中前列腺癌样本的甲基化原始数据，同时内置数据质控模块，可自动过滤低质量探针、去除批次效应及样本异常值，确保数据可靠性；接着，采用 limma 算法结合差异倍数与统计显著性阈值，高效筛选出癌组织与正常组织间的差异甲基化位点，并生成可视化火山图与热图，直观呈现位点表达差异特征；随后，针对筛选出的差异位点，创新性整合单因素 Cox 比例风险回归模型与 log-rank 检验两种分析方法，前者用于量化位点与患者生存时间的关联强度（计算 HR 值及 95% 置信区间），后者用于验证不同甲基化水平分组的生存曲线差异，双重验证确保预后标志物的准确性；最后，系统可自动生成包含差异位点信息、Cox 分析结果、生存曲线及统计检验表格的综合报告，为临床前列腺癌预后评估及潜在治疗靶点研究提供直接的数据支撑与可视化依据。​
 
-https://www.jianshu.com/p/1d6edfcb4110
+二、前列腺癌基因突变分析系统​
+
+该系统专为前列腺癌基因突变特征解析与临床关联研究设计，覆盖基因突变数据全流程分析需求。在数据处理环节，系统支持批量导入 TCGA 数据库的前列腺癌基因突变 MAF 格式文件，通过内置的突变注释工具，自动完成基因突变类型（错义突变、无义突变、移码插入 / 缺失等）的分类标注，同时过滤胚系突变与低置信度突变位点，保障分析数据的临床相关性；在突变特征统计方面，系统可自动计算各基因的突变频率、突变频谱（碱基替换模式）及样本突变负荷，生成 oncoplot 瀑布图、突变类型分布饼图等可视化图表，清晰展示高频突变基因的突变模式与样本突变分布规律；此外，系统核心功能在于突变与预后的关联分析，通过 Kaplan-Meier 生存分析结合 log-rank 检验，深入探究高频突变基因（如 TP53、PTEN、SPOP 等）的突变状态与患者总生存期（OS）、无进展生存期（PFS）的关联，同时支持亚组分析，可按临床病理特征（如肿瘤分期、分级）划分样本组，分析不同亚组中突变的预后意义；最后，系统还具备突变基因功能富集分析模块，可对高频突变基因进行 GO 功能注释与 KEGG 通路富集分析，揭示突变基因涉及的生物学过程（如细胞周期调控、DNA 损伤修复），为解析前列腺癌发生发展机制及指导靶向治疗方案选择提供关键技术支持。
